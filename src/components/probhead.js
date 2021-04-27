@@ -1,12 +1,14 @@
-import React from "react";
+import React, { Component } from "react";
 import "./probhead.css";
 
-const probhead = () => {
-    return (
-        <div className="prob_head">
-            <span className="prob_solved">푼 문제: {}/10</span>
-        </div>
-    );
+class Probhead extends Component {
+    render() {
+        return (
+            <header className="prob_head">
+                <h3>문제 번호: <span>{this.props.name}</span> / 7</h3>
+            </header>
+        );
+    }
 }
 
-export default probhead;
+export default Probhead;

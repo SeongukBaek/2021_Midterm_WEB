@@ -1,31 +1,30 @@
 * {
     text-align: center;
 }
-.homeimgbtn {
-    border: none;
-    background-color: lightblue;
-    cursor: pointer;
-    border-radius: 20%;
-}
-.homeimgbtn:hover {
-    background-color: linen;
-}
 .homeimg {
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 70px;
+    cursor: pointer;
+}
+.homeimg:hover {
+    transform: rotate(10deg);
 }
 h1 {
     padding-top: 200px;
-    font: message-box;
+    font-style: oblique;
     font-size: 50px;
 }
-span.solve {
+span.complete {
     font-size: 60px;
+    font-style: normal;
     color: mediumblue;
+    cursor: help;
 }
 span.computer {
     font-size: 55px;
-    color: saddlebrown;
+    font-style: normal;
+    color: dimgrey;
+    cursor: help;
 }
 h3 {
     font: message-box;

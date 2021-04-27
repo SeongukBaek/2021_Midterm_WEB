@@ -1,4 +1,8 @@
 .prob_head {
     text-align: center;
-    width: 100%;
+    height: fit-content;
+    border-bottom: 1px solid black;
+}
+span {
+    color: orangered;
 }
