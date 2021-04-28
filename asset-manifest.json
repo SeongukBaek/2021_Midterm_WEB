@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/2021_Midterm_WEB/static/css/main.b7e08db8.chunk.css",
+    "main.js": "/2021_Midterm_WEB/static/js/main.30286f5f.chunk.js",
+    "main.js.map": "/2021_Midterm_WEB/static/js/main.30286f5f.chunk.js.map",
+    "runtime-main.js": "/2021_Midterm_WEB/static/js/runtime-main.174b6558.js",
+    "runtime-main.js.map": "/2021_Midterm_WEB/static/js/runtime-main.174b6558.js.map",
+    "static/js/2.2f9152a4.chunk.js": "/2021_Midterm_WEB/static/js/2.2f9152a4.chunk.js",
+    "static/js/2.2f9152a4.chunk.js.map": "/2021_Midterm_WEB/static/js/2.2f9152a4.chunk.js.map",
+    "static/js/3.ad562728.chunk.js": "/2021_Midterm_WEB/static/js/3.ad562728.chunk.js",
+    "static/js/3.ad562728.chunk.js.map": "/2021_Midterm_WEB/static/js/3.ad562728.chunk.js.map",
+    "index.html": "/2021_Midterm_WEB/index.html",
+    "static/css/main.b7e08db8.chunk.css.map": "/2021_Midterm_WEB/static/css/main.b7e08db8.chunk.css.map",
+    "static/js/2.2f9152a4.chunk.js.LICENSE.txt": "/2021_Midterm_WEB/static/js/2.2f9152a4.chunk.js.LICENSE.txt",
+    "static/media/f.4af980f2.png": "/2021_Midterm_WEB/static/media/f.4af980f2.png",
+    "static/media/s.png": "/2021_Midterm_WEB/static/media/s.8e4446bc.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.174b6558.js",
+    "static/js/2.2f9152a4.chunk.js",
+    "static/css/main.b7e08db8.chunk.css",
+    "static/js/main.30286f5f.chunk.js"
+  ]
+}
