@@ -1,13 +1,28 @@
 import React from "react";
 import "./endpage.css";
 import queryString from "query-string";
+import success from "../images/s.png";
+import fail from "../images/f.png";
 
-const endpage = ({ location, history }) => {
+const Endpage = ({ location, history }) => {
   const q = queryString.parse(location.search).success;
-  console.log(q);
+  const c = queryString.parse(location.search).correct;
+  const str = {
+    content: "",
+  };
+  if (c === "7") {
+    str.content = str.content + "Congraduation !!!";
+  } else {
+    str.content = str.content + "# of your parts is " + { c } + " ...";
+  }
   return (
     <div>
-      <img src="s.png" className="result_img" alt="result"></img>
+      <h1>{str.content}</h1>
+      <img
+        src={q === "1" ? success : fail}
+        className="result_img"
+        alt="result"
+      ></img>
       <div>
         <button
           className="homebtn"
@@ -31,4 +46,4 @@ const endpage = ({ location, history }) => {
   );
 };
 
-export default endpage;
+export default Endpage;

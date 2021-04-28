@@ -1,4 +1,8 @@
+h1 {
+  margin-bottom: 80px;
+}
 .homebtn {
+  margin-top: 30px;
   font-size: 30px;
   text-align: center;
   border: none;

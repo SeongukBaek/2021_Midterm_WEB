@@ -3,7 +3,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./components/Home";
 import Problems from "./components/problems";
-import endpage from "./components/endpage";
+import Endpage from "./components/endpage";
 
 class App extends Component {
   render() {
@@ -12,7 +12,7 @@ class App extends Component {
         <BrowserRouter>
           <Route path="/" exact component={Home} />
           <Route path="/problems" component={Problems} />
-          <Route path="/endpage" component={endpage} />
+          <Route path="/endpage" component={Endpage} />
         </BrowserRouter>
       </div>
     );

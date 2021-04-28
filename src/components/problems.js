@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import styled from "styled-components";
 import "./problems.css";
 import Probhead from "./probhead";
 
@@ -8,43 +7,52 @@ const pbs = [
     id: 1,
     pb: "GET 방식보다 POST 방식이 더 안전하다 (T or F)",
     answer: "t",
+    reward: "Monitor",
   },
   {
     id: 2,
-    pb: "Dijkstra Algorithm은 어떤 기법을 사용하는 알고리즘인가 ? (Full name)",
-    answer: "dynamic programming",
+    pb:
+      "(      )는 높은 신뢰성을 보장하고, Congestion Control 및 Flow Control을 수행한다",
+    answer: "tcp",
+    reward: "Main body",
   },
   {
     id: 3,
     pb: "Node.js is a (      )-threaded application.",
     answer: "single",
+    reward: "Router",
   },
   {
     id: 4,
     pb: "웹사이트를 구성하는 3가지 요소는 HTML, CSS, (      )",
     answer: "javascript",
+    reward: "Mouse",
   },
   {
     id: 5,
     pb:
       "React에서 Component를 구현하는 방법에는 (      )형, class형 두 가지가 있다",
     answer: "function",
+    reward: "Speaker",
   },
   {
     id: 6,
     pb: "함수를 선언할 때 사용된 변수는 무엇인가 ?",
     answer: "parameter",
+    reward: "Headset",
   },
   {
     id: 7,
     pb: "다른 함수에 argument로 전달되는 함수는 무엇인가 ?",
     answer: "callback",
+    reward: "Keyboard",
   },
   {
     id: 8,
     pb:
       "<추가 문제> 고급 웹 프로그래밍 강의를 진행하는 강의실은 106호이다 (T or F)",
     answer: "t",
+    reward: "Additional Part",
   },
 ];
 
@@ -52,6 +60,7 @@ class Problems extends Component {
   probcnt = 0;
   imgname = this.probcnt + 1 + ".png";
   correctcnt = 0;
+
   constructor(props) {
     super(props);
     this.state = {
@@ -71,16 +80,16 @@ class Problems extends Component {
       this.correctcnt = this.correctcnt + 1;
       this.probcnt = this.probcnt + 1;
       this.imgname = this.probcnt + 1 + ".png";
-      alert("Correct ! Get reward");
+      alert(pbs[this.probcnt - 1].reward + " GET!");
     } else {
       this.probcnt = this.probcnt + 1;
       this.imgname = this.probcnt + 1 + ".png";
-      alert("Wrong !!!");
+      alert(pbs[this.probcnt - 1].reward + " BYE ...");
     }
     if (this.correctcnt >= 7 && this.probcnt >= 7) {
-      this.props.history.push("/endpage/?success=1");
+      this.props.history.push("/endpage/?success=1&correct=" + this.correctcnt);
     } else if (this.correctcnt <= 5 && this.probcnt === 7) {
-      this.props.history.push("/endpage/?success=0");
+      this.props.history.push("/endpage/?success=0&correct=" + this.correctcnt);
     }
     this.inputChange(e);
   }
@@ -116,7 +125,7 @@ class Problems extends Component {
             alt="reward_img"
             className="reward_img"
             style={
-              this.probcnt <= 7
+              this.probcnt < 7
                 ? { visibility: "visible" }
                 : { visibility: "hidden" }
             }
