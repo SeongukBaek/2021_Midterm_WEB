@@ -1,0 +1,33 @@
+.homebtn {
+  font-size: 30px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  transition: background-color 1.5s;
+}
+.homebtn:hover {
+  background-color: black;
+  color: white;
+}
+.againbtn {
+  font-size: 30px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  letter-spacing: 20px;
+  width: 300px;
+  height: 150px;
+  transition: letter-spacing 1s, background-color 1s;
+}
+.againbtn:hover {
+  letter-spacing: normal;
+  background-color: black;
+  color: white;
+}
+.result_img {
+  width: 500px;
+  height: auto;
+  border: none;
+}

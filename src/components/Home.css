@@ -1,32 +1,40 @@
 * {
-    text-align: center;
+  text-align: center;
 }
 .homeimg {
-    width: 80px;
-    height: 70px;
-    cursor: pointer;
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.6s;
 }
 .homeimg:hover {
-    transform: rotate(10deg);
+  transform: rotate(10deg);
 }
 h1 {
-    padding-top: 200px;
-    font-style: oblique;
-    font-size: 50px;
+  padding-top: 200px;
+  font-style: oblique;
+  font-size: 50px;
 }
 span.complete {
-    font-size: 60px;
-    font-style: normal;
-    color: mediumblue;
-    cursor: help;
+  font-size: 60px;
+  font-style: normal;
+  color: mediumblue;
+  cursor: help;
 }
 span.computer {
-    font-size: 55px;
-    font-style: normal;
-    color: dimgrey;
-    cursor: help;
+  font-size: 55px;
+  font-style: normal;
+  color: dimgrey;
+  cursor: help;
 }
 h3 {
-    font: message-box;
-    font-weight: bold;
+  font: message-box;
+  font-weight: bold;
+  font-size: 30px;
+}
+.des {
+  font: sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: darkgrey;
 }

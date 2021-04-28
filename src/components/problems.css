@@ -1,10 +1,28 @@
-.answer {
-    
+p {
+  font-size: 40px;
+}
+input {
+  font-size: 20px;
 }
 .btn_submit {
-    color: white;
-    background-color: #428bca;
-    border-color: #428bca;
-    text-shadow: none;
-    cursor: pointer;
+  text-align: center;
+  font-size: 15px;
+  font-family: 고딕체;
+  font-weight: 800;
+  color: #ffffff;
+  padding: 6px 12px;
+  background: black;
+  background-color: #428bca;
+  border: #357ebd 1px solid;
+  border-radius: 0px;
+  cursor: pointer;
+}
+.btn_submit:hover {
+  visibility: visible;
+  opacity: 0.6;
+}
+.reward {
+  visibility: hidden;
+  width: 200px;
+  height: auto;
 }

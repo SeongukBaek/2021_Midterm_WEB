@@ -1,8 +1,12 @@
 .prob_head {
-    text-align: center;
-    height: fit-content;
-    border-bottom: 1px solid black;
+  text-align: center;
+  height: fit-content;
+  border-bottom: 1px solid black;
 }
 span {
-    color: orangered;
+  color: orangered;
+}
+.reward_img {
+  width: 300px;
+  height: auto;
 }
