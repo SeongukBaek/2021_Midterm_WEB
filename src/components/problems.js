@@ -68,7 +68,6 @@ class Problems extends Component {
     };
     this.inputChange = this.inputChange.bind(this);
     this.inputSubmit = this.inputSubmit.bind(this);
-    this.inputReset = this.inputReset.bind(this);
   }
   inputChange(e) {
     this.setState({ input: e.target.value });
@@ -92,9 +91,6 @@ class Problems extends Component {
       this.props.history.push("/endpage/?success=0&correct=" + this.correctcnt);
     }
     this.inputChange(e);
-  }
-  inputReset(e) {
-    console.log(e);
   }
   render() {
     return (
