@@ -7,6 +7,7 @@ import fail from "../images/f.png";
 const Endpage = ({ location, history }) => {
   const q = queryString.parse(location.search).success;
   const c = queryString.parse(location.search).correct;
+  console.log(q, c);
   const str = {
     content: "",
   };
@@ -17,9 +18,9 @@ const Endpage = ({ location, history }) => {
   }
   return (
     <div>
-      <h1 className={q === "1" ? "result_s" : "result_f"}>{str.content}</h1>
+      <h1 className={q === "7" ? "result_s" : "result_f"}>{str.content}</h1>
       <img
-        src={q === "1" ? success : fail}
+        src={q === "7" ? success : fail}
         className="result_img"
         alt="result"
       ></img>
@@ -27,7 +28,7 @@ const Endpage = ({ location, history }) => {
         <button
           className="homebtn"
           onClick={() => {
-            history.push("/");
+            history.push("/2021_Midterm_WEB/");
           }}
         >
           Go Home
@@ -37,7 +38,7 @@ const Endpage = ({ location, history }) => {
       <button
         className="againbtn"
         onClick={() => {
-          history.push("/problems");
+          history.push("/2021_Midterm_WEB/problems");
         }}
       >
         Complete My Computer Again!

@@ -15,7 +15,7 @@ const Home = ({ history }) => {
         alt="solve"
         className="homeimg"
         onClick={() => {
-          history.push("/problems");
+          history.push("/2021_Midterm_WEB/problems");
         }}
       ></img>
     </div>
