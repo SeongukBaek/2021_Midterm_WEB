@@ -1,4 +1,4 @@
-p {
+.pb_text {
   font-size: 40px;
 }
 input {
@@ -21,8 +21,15 @@ input {
   visibility: visible;
   opacity: 0.6;
 }
-.reward {
-  visibility: hidden;
-  width: 200px;
+.reward_text {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #428bca;
+  border: none;
+}
+.reward_img {
+  width: 300px;
   height: auto;
 }

@@ -4,7 +4,7 @@ import "./Home.css";
 const Home = ({ history }) => {
   return (
     <div>
-      <h1>
+      <h1 className="home_title">
         <span className="complete">Complete </span> My{" "}
         <span className="computer"> Computer!</span>
       </h1>

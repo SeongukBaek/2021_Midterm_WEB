@@ -1,6 +1,13 @@
 import React, { Component } from "react";
 import "./problems.css";
 import Probhead from "./probhead";
+import i0 from "../images/0.png";
+import i1 from "../images/1.png";
+import i2 from "../images/2.png";
+import i3 from "../images/3.png";
+import i4 from "../images/4.png";
+import i5 from "../images/5.png";
+import i6 from "../images/6.png";
 
 const pbs = [
   {
@@ -39,7 +46,7 @@ const pbs = [
     id: 6,
     pb: "함수를 선언할 때 사용된 변수는 무엇인가 ?",
     answer: "parameter",
-    reward: "Headset",
+    reward: "HDD",
   },
   {
     id: 7,
@@ -58,9 +65,7 @@ const pbs = [
 
 class Problems extends Component {
   probcnt = 0;
-  imgname = this.probcnt + 1 + ".png";
   correctcnt = 0;
-
   constructor(props) {
     super(props);
     this.state = {
@@ -71,18 +76,16 @@ class Problems extends Component {
   }
   inputChange(e) {
     this.setState({ input: e.target.value });
-    console.log(this.state.input);
+    console.log(this.state.input, this.probcnt);
   }
   inputSubmit(e) {
     e.preventDefault();
     if (this.state.input.toLowerCase() === pbs[this.probcnt].answer) {
       this.correctcnt = this.correctcnt + 1;
       this.probcnt = this.probcnt + 1;
-      this.imgname = this.probcnt + 1 + ".png";
       alert(pbs[this.probcnt - 1].reward + " GET!");
     } else {
       this.probcnt = this.probcnt + 1;
-      this.imgname = this.probcnt + 1 + ".png";
       alert(pbs[this.probcnt - 1].reward + " BYE ...");
     }
     if (this.correctcnt >= 7 && this.probcnt >= 7) {
@@ -96,7 +99,7 @@ class Problems extends Component {
     return (
       <div>
         <Probhead name={this.probcnt + 1} />
-        <p>{pbs[this.probcnt].pb}</p>
+        <p className="pb_text">{pbs[this.probcnt].pb}</p>
         <form onSubmit={this.inputChange}>
           <input
             type="text"
@@ -115,9 +118,26 @@ class Problems extends Component {
           </button>
         </form>
         <br></br>
-        <div>
+        <div className="reward_area">
+          <p className="reward_text">REWARD</p>
           <img
-            src={this.imgname}
+            src={
+              this.probcnt === 0
+                ? i0
+                : this.probcnt === 1
+                ? i1
+                : this.probcnt === 2
+                ? i2
+                : this.probcnt === 3
+                ? i3
+                : this.probcnt === 4
+                ? i4
+                : this.probcnt === 5
+                ? i5
+                : this.probcnt === 6
+                ? i6
+                : i6
+            }
             alt="reward_img"
             className="reward_img"
             style={

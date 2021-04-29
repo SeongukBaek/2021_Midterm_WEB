@@ -13,11 +13,11 @@ const Endpage = ({ location, history }) => {
   if (c === "7") {
     str.content = str.content + "Congraduation !!!";
   } else {
-    str.content = str.content + "# of your parts is " + { c } + " ...";
+    str.content = str.content + "# of your parts is " + c + " ...";
   }
   return (
     <div>
-      <h1>{str.content}</h1>
+      <h1 className={q === "1" ? "result_s" : "result_f"}>{str.content}</h1>
       <img
         src={q === "1" ? success : fail}
         className="result_img"

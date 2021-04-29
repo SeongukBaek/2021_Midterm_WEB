@@ -1,5 +1,35 @@
-h1 {
+.result_s {
   margin-bottom: 80px;
+  position: relative;
+  top: 20px;
+  animation: bounce 0.5s ease infinite alternate;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+    0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
+    0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+.result_f {
+  margin-bottom: 80px;
+  position: relative;
+  top: 20px;
+  animation: deep 1s ease infinite alternate;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+    0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
+    0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+@keyframes bounce {
+  100% {
+    top: -20px;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+      0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,
+      0 50px 25px rgba(0, 0, 0, 0.2);
+  }
+}
+@keyframes deep {
+  100% {
+    text-shadow: 0 0px 0 darkgray, 0 2px 0 darkgray, 0 3px 0 darkgray,
+      0 4px 0 darkgray, 0 5px 0 darkgray, 0 6px 0 darkgray, 0 7px 0 darkgray,
+      0 0px 0 darkgray, 0 0px 0 darkgray, 0 0px 0px rgba(0, 0, 0, 0.2);
+  }
 }
 .homebtn {
   margin-top: 30px;
@@ -31,7 +61,16 @@ h1 {
   color: white;
 }
 .result_img {
-  width: 500px;
+  width: 400px;
   height: auto;
   border: none;
+  animation: afterload 3s forwards;
+}
+@keyframes afterload {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
