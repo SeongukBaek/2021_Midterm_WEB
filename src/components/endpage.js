@@ -18,9 +18,9 @@ const Endpage = ({ location, history }) => {
   }
   return (
     <div>
-      <h1 className={q === "7" ? "result_s" : "result_f"}>{str.content}</h1>
+      <h1 className={q === "1" ? "result_s" : "result_f"}>{str.content}</h1>
       <img
-        src={q === "7" ? success : fail}
+        src={q === "1" ? success : fail}
         className="result_img"
         alt="result"
       ></img>
