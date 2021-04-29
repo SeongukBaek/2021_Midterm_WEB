@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./problems.css";
 import Probhead from "./probhead";
+import Probdes from "./probdes";
 import i0 from "../images/0.png";
 import i1 from "../images/1.png";
 import i2 from "../images/2.png";
@@ -121,6 +122,7 @@ class Problems extends Component {
             제출
           </button>
         </form>
+        <Probdes />
         <br></br>
         <div className="reward_area">
           <p className="reward_text">REWARD</p>
