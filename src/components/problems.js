@@ -86,7 +86,7 @@ class Problems extends Component {
       alert(pbs[this.probcnt - 1].reward + " GET!");
     } else {
       this.probcnt = this.probcnt + 1;
-      alert(pbs[this.probcnt - 1].reward + " BYE ...");
+      alert("Wrong ! Answer is " + pbs[this.probcnt - 1].answer);
     }
     if (this.correctcnt >= 7 && this.probcnt >= 7) {
       this.props.history.push(
