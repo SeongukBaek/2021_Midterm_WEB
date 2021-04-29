@@ -89,9 +89,13 @@ class Problems extends Component {
       alert(pbs[this.probcnt - 1].reward + " BYE ...");
     }
     if (this.correctcnt >= 7 && this.probcnt >= 7) {
-      this.props.history.push("/endpage/?success=1&correct=" + this.correctcnt);
+      this.props.history.push(
+        "/2021_Midterm_WEB/endpage/?success=1&correct=" + this.correctcnt
+      );
     } else if (this.correctcnt <= 5 && this.probcnt === 7) {
-      this.props.history.push("/endpage/?success=0&correct=" + this.correctcnt);
+      this.props.history.push(
+        "/2021_Midterm_WEB/endpage/?success=0&correct=" + this.correctcnt
+      );
     }
     this.inputChange(e);
   }

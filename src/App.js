@@ -17,7 +17,7 @@ class App extends Component {
               path="/2021_Midterm_WEB/problems"
               component={Problems}
             />
-            <Route path="/2021_Midterm_WEB/endpage" component={Endpage} />
+            <Route path="/2021_Midterm_WEB/endpage/" component={Endpage} />
           </Switch>
         </BrowserRouter>
       </div>
