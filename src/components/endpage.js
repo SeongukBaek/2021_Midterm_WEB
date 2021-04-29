@@ -7,11 +7,11 @@ import fail from "../images/f.png";
 const Endpage = ({ location, history }) => {
   const q = queryString.parse(location.search).success;
   const c = queryString.parse(location.search).correct;
-  console.log(q, c);
+  console.log(typeof q, q, typeof c, c);
   const str = {
     content: "",
   };
-  if (c === "7") {
+  if (Number(q) >= 1 && Number(c) >= 7) {
     str.content = str.content + "Congraduation !!!";
   } else {
     str.content = str.content + "# of your parts is " + c + " ...";
