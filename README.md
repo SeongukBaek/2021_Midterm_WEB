@@ -2,9 +2,5 @@
 
 ## :computer: Complete My Computer !
 
-​	문제를 풀고 보상을 획득합니다.
-
-​	[Let's Complete](https://seongukbaek.github.io/2021_Midterm_WEB/)
-
-​	
-
+  문제를 풀고 보상을 획득합니다.
+  [Let's Complete](https://seongukbaek.github.io/2021_Midterm_WEB/)
